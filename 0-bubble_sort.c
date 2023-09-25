@@ -2,7 +2,7 @@
 
 
 /**
- * swap - swaps a pair of numbers. Lesser num first*/
+ * swap - swaps a pair of numbers. Lesser num first
  * @num1: first number
  * @num2: second number
  */
@@ -14,7 +14,8 @@ void swap(int *num1, int *num2)
 }
 
 /**
- * bubble_sort - sorts an array of integers in ascending order using the Bubble sort algorithm
+ * bubble_sort - sorts an array of integers in ascending
+order using the Bubble sort algorithm
  * @array: array of integers
  * @size: size of array
  */
