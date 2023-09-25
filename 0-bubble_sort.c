@@ -15,7 +15,7 @@ void swap(int *num1, int *num2)
 
 /**
  * bubble_sort - sorts an array of integers in ascending
-order using the Bubble sort algorithm
+ * order using the Bubble sort algorithm
  * @array: array of integers
  * @size: size of array
  */
