@@ -4,6 +4,7 @@
  * swap_nodes - swaps positions of node1(1st) with node2 (2nd)
  * @node1: first node. Node on the left.
  * @node2: second node. Node on the right.
+ * @head: points to head of listint_t list
  * Return: Returns head of list
  */
 listint_t *swap_nodes(listint_t *node1, listint_t *node2, listint_t *head)
