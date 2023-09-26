@@ -31,19 +31,19 @@ int partition(int *array, size_t left, size_t right, size_t size)
 	/*idx of smaller element*/
 	i = left - 1;
 
-	for (j = left; j <= right - 1; j++)
+	for (j = left; j < right; j++)
 	{
-		if (array[j] < pivot)
+		if (array[j] <= pivot)
 		{
 			i++;
-			if (j != i)
+			if (i != j)
 			{
 				swap(&array[i], &array[j]);
 				print_array(array, size);
 			}
 		}
 	}
-	if (i != right)
+	if (i + 1 != right)
 	{
 		swap(&array[i + 1], &array[right]);
 		print_array(array, size);
