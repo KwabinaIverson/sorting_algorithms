@@ -13,7 +13,7 @@ listint_t *swap_nodes(listint_t *node1, listint_t *node2, listint_t *head)
 	tmp = malloc(sizeof(listint_t));
 
 	if (!tmp)
-		return NULL;
+		return (NULL);
 
 	/* Copy first node to tmp */
 	tmp->prev = node1->prev;
@@ -34,7 +34,7 @@ listint_t *swap_nodes(listint_t *node1, listint_t *node2, listint_t *head)
 	free(tmp);
 
 	if (node2->prev == NULL)
-		return node2;  // Return the new head of the list
+		return (node2);  /* Return the new head of the list*/
 	return (head);
 }
 
@@ -46,6 +46,7 @@ listint_t *swap_nodes(listint_t *node1, listint_t *node2, listint_t *head)
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *h, *c_node, *p_node;
+
 	h = *list;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
@@ -76,6 +77,6 @@ void insertion_sort_list(listint_t **list)
 				p_node = p_node->next;
 			}
 		}
-        	h = h->next;
+		h = h->next;
 	}
 }
