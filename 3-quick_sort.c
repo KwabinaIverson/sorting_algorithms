@@ -39,7 +39,7 @@ int partition(int *array, size_t left, size_t right, size_t size)
 			swap(&array[i], &array[j]);
 		}
 	}
-	swap(&array[i+ 1], &array[right]);
+	swap(&array[i + 1], &array[right]);
 	print_array(array, size);
 
 	return (i + 1);
