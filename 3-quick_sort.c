@@ -45,7 +45,7 @@ int partition(int *array, size_t left, size_t right, size_t size)
 	}
 	if (i != right)
 	{
-		swap(&array[i+ 1], &array[right]);
+		swap(&array[i + 1], &array[right]);
 		print_array(array, size);
 	}
 
@@ -86,7 +86,7 @@ void quick_sort(int *array, size_t size)
 	size_t left = 0;
 	size_t right = size - 1;
 
-	if (array == NULL || size <2)
+	if (array == NULL || size < 2)
 		return;
 
 	q_sort(array, left, right, size);
